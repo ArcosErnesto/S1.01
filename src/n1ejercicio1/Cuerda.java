@@ -2,14 +2,17 @@ package n1ejercicio1;
 
 public class Cuerda extends Instrumento {
 
-	public Cuerda(String nombre, int precio) {
-		super(nombre, precio);
+	static {
+		System.out.println("La clase Cuerda se ha cargado.\n");
+	}
 
+	public Cuerda(String nombre, double precio) {
+		super(nombre, precio);
 	}
 
 	@Override
-	public void tocarInstrumento() {
-		System.out.println("Estás tocando un instrumento de cuerda.");
+	public void tocar() {
+		System.out.println("Está sonando el instrumento de cuerda: " + this.nombre + ".");
 
 	}
 

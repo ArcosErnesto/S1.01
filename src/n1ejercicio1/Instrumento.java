@@ -1,15 +1,15 @@
 package n1ejercicio1;
 
 public abstract class Instrumento {
-	private String nombre;
-	private int precio;
+
+	protected String nombre;
+	protected double precio;
 
 	static {
-		System.out.println("Instrumento: Inicialización estática");
+		System.out.println("La clase Instrumento se ha cargado.\n");
 	}
 
-	public Instrumento(String nombre, int precio) {
-		super();
+	public Instrumento(String nombre, double precio) {
 		this.nombre = nombre;
 		this.precio = precio;
 	}
@@ -18,23 +18,10 @@ public abstract class Instrumento {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public int getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(int precio) {
-		this.precio = precio;
-	}
-
-	public abstract void tocarInstrumento();
-
-	@Override
-	public String toString() {
-		return "Instrumento ---> Nombre: " + nombre + ", Precio: " + precio + "€.";
-	}
+	public abstract void tocar();
 
 }
