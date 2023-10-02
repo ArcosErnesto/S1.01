@@ -16,4 +16,9 @@ public class Cuerda extends Instrumento {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Cuerda ---> Nombre: " + nombre + ", Precio: " + precio + ".";
+	}
+
 }

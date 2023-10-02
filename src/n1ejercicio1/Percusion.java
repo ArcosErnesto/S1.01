@@ -15,4 +15,9 @@ public class Percusion extends Instrumento {
 		System.out.println("Está sonando el instrumento de percusión: " + this.nombre + ".");
 	}
 
+	@Override
+	public String toString() {
+		return "Percusion ---> Nombre: " + nombre + ", Precio: " + precio + ".";
+	}
+
 }

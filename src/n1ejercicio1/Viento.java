@@ -17,4 +17,9 @@ public class Viento extends Instrumento {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Viento ---> Nombre: " + nombre + ", Precio: " + precio + ".";
+	}
+
 }
