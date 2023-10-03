@@ -4,18 +4,22 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Coche.frenar();
+		System.out.println(Car.getBrand());
+		System.out.println(Car.getModel());
 
-		Coche coche1 = new Coche();
+		Car.brake();
 
-		System.out.println(coche1);
+		Car car1 = new Car();
+		Car car2 = new Car();
 
-		coche1.setModelo("TT");
+		System.out.println(car1);
+		System.out.println(car2);
 
-		System.out.println(coche1);
+		car2.setModel("Q5");
+		car1.accelerate();
 
-		coche1.acelerar();
-		coche1.frenar();
+		System.out.println(car1);
+		System.out.println(car2);
 
 	}
 
