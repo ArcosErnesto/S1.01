@@ -15,7 +15,7 @@ public class Main {
 		System.out.println(car1);
 		System.out.println(car2);
 
-		car2.setModel("Q5");
+		Car.setModel("Q5");
 		car1.accelerate();
 
 		System.out.println(car1);
